@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"github.com/maxicapodacqua/choose-your-own-adventure/internal"
 	"html/template"
 	"io/ioutil"
@@ -30,8 +29,6 @@ func main() {
 			panic(err)
 		}
 	})
-
-	fmt.Printf("%#v", http.DefaultServeMux)
 
 	err := http.ListenAndServe(":8000", nil)
 	if err != nil {

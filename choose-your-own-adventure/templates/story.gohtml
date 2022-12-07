@@ -7,12 +7,14 @@
     {{end}}
 </div>
 <div>
+    {{if .Options}}
     <h3>Options:</h3>
     <ul>
         {{range .Options}}
             <li><a href="/{{.Arc}}">{{.Text}}</a></li>
         {{end}}
     </ul>
+    {{end}}
 </div>
 </body>
 </html>
